@@ -20,4 +20,9 @@ set laststatus=2            " Show the status line all the time
 " Set status line; I'm not completely sure how this works, I should figure this out
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Some nice buffer command mappings
+nmap <silent> <Left> :bp<Cr>
+nmap <silent> <Right> :bn<Cr>
+nmap <silent> <Up> :bd<Cr>
+
 call pathogen#infect() " Run Pathogen to load the bundle
