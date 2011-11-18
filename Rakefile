@@ -125,4 +125,5 @@ desc "Initialize submodules and link up files"
 task 'init' do
   Rake::Task['plugin:update'].invoke
   Rake::Task['link:all'].invoke
+  Rake::Task['doc:update'].invoke
 end
