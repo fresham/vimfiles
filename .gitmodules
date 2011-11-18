@@ -1,3 +1,6 @@
 [submodule "bundle/vim-project"]
 	path = bundle/vim-project
 	url = https://github.com/shemerey/vim-project.git
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
