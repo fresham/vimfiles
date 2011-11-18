@@ -54,3 +54,20 @@ task 'link:all' do
   Rake::Task['link:gvimrc'].invoke
   Rake::Task['link:vim'].invoke
 end
+
+
+desc "Update plugins"
+task 'plugin:update' do
+  puts `git submodule init`
+  puts `git submodule update`
+end
+
+
+desc "Add new plugin"
+task 'plugin:add' do
+  puts 'Paste HTTP URL of git repo:'
+  url = STDIN.gets.chomp
+  folder = url.sub(/https:\/\/github\.com\/.*\/(.*?)\.git$/, '\1')
+  
+  puts `git submodule add #{url} bundle/#{folder}`
+end
