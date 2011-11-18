@@ -15,5 +15,9 @@ set shiftwidth=2            " And again, related.
 set expandtab               " Use spaces instead of tabs
 au FileType * setl fo-=cro  " Turn off auto-commenting
 let mapleader = "\\"        " Map leader to '\'
+set laststatus=2            " Show the status line all the time
+
+" Set status line; I'm not completely sure how this works, I should figure this out
+set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 call pathogen#infect() " Run Pathogen to load the bundle
