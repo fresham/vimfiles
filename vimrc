@@ -1,5 +1,7 @@
 set nocompatible " Set Vim to run in the full-featured mod
 
+syntax enable
+filetype plugin indent on
 set autoindent              " Automatically indent on new lines
 set smartindent             " Change indentation to match a local context
 set ignorecase              " Case-insensitive searching.
