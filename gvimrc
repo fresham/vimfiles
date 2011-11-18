@@ -1,8 +1,8 @@
 " Set font based on vim GUI
 if has("gui_macvim")
-  set guifont=courier\ new:h16
+  set guifont=courier\ new:h14
 else
-  set guifont=courier\ 16
+  set guifont=courier\ 14
 endif
 
 set antialias        " Smooth fonts
