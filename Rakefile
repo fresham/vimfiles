@@ -116,7 +116,7 @@ end
 desc "Update locally added help documentation"
 task 'doc:update' do
   `find bundle | grep doc$`.split("\n").each do |dir|
-    puts `vim +'helptags #{dir}' +'q!'`
+    `vim +'helptags #{dir}' +'q!'`
   end
 end
 
