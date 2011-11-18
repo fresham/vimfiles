@@ -7,6 +7,20 @@ def link(old, new)
 end
 
 
+def delete_lines(file, regex)
+  lines = []
+  File.open(file, 'r') do |file|
+    lines = file.read.split("\n")
+  end
+  
+  contents = lines.reject {|line| line =~ regex}.join("\n")
+  
+  File.open(file, 'w') do |file|
+    file.puts contents
+  end
+end
+
+
 desc "Update Pathogen to latest version"
 task 'update_pathogen' do
   require 'open-uri'
@@ -70,6 +84,29 @@ task 'plugin:add' do
   folder = url.sub(/https:\/\/github\.com\/.*\/(.*?)\.git$/, '\1')
   
   puts `git submodule add #{url} bundle/#{folder}`
+end
+
+
+desc "Remove plugin"
+task 'plugin:remove' do
+  puts 'Which plugin would you like to remove?'
+  plugin = STDIN.gets.chomp
+  gitmodules = '.gitmodules'
+  git_config = File.join('.git', 'config')
+  
+  delete_lines(gitmodules, /^\[submodule "bundle\/#{plugin}"\]$/)
+  delete_lines(gitmodules, /^\s+path = bundle\/#{plugin}$/)
+  delete_lines(gitmodules, /^\s+url = https:\/\/github\.com\/.*\/#{plugin}\.git$/)
+  
+  delete_lines(git_config, /^\[submodule "bundle\/#{plugin}"\]$/)
+  delete_lines(git_config, /^\s+url = https:\/\/github\.com\/.*\/#{plugin}\.git$/)
+  
+  puts `rm -rf bundle/#{plugin}`
+  
+  puts `git reset HEAD`
+  puts `git rm --cached bundle/#{plugin}`
+  puts `git add .gitmodules bundle`
+  puts `git commit -m 'Remove #{plugin} plugin.'`
 end
 
 
