@@ -81,9 +81,12 @@ desc "Add new plugin"
 task 'plugin:add' do
   puts 'Paste HTTP URL of git repo:'
   url = STDIN.gets.chomp
-  folder = url.sub(/https:\/\/github\.com\/.*\/(.*?)\.git$/, '\1')
+  plugin = url.sub(/https:\/\/github\.com\/.*\/(.*?)\.git$/, '\1')
   
-  puts `git submodule add #{url} bundle/#{folder}`
+  puts `git reset HEAD`
+  puts `git submodule add #{url} bundle/#{plugin}`
+  puts `git add .gitmodules bundle`
+  puts `git commit -m 'Add #{plugin} plugin.'`
 end
 
 
