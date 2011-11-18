@@ -4,3 +4,6 @@
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/UltiSnips"]
+	path = bundle/UltiSnips
+	url = https://github.com/fresham/UltiSnips.git
