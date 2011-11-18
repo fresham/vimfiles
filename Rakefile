@@ -113,6 +113,14 @@ task 'plugin:remove' do
 end
 
 
+desc "Update locally added help documentation"
+task 'doc:update' do
+  `find bundle | grep doc$`.split("\n").each do |dir|
+    puts `vim +'helptags #{dir}' +'q!'`
+  end
+end
+
+
 desc "Initialize submodules and link up files"
 task 'init' do
   Rake::Task['plugin:update'].invoke
