@@ -19,6 +19,12 @@ au FileType * setl fo-=cro  " Turn off auto-commenting
 let mapleader = "\\"        " Map leader to '\'
 set laststatus=2            " Show the status line all the time
 
+" These are project plugin settings. Normally, these include the 'b' option,
+" which uses the file explorer of the OS to locate the project path. Unfortunately,
+" this is a bit buggy with GVim on Mint (maybe others as well, but at least this one),
+" so I've removed it explicitly.
+let g:proj_flags='imst'
+
 " Set status line; I'm not completely sure how this works, I should figure this out
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
