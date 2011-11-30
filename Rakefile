@@ -77,6 +77,40 @@ task 'plugin:update' do
 end
 
 
+desc "Upgrade specified plugin to latest commit"
+task 'plugin:upgrade' do
+  puts 'Which plugin do you want to update?'
+  plugin = STDIN.gets.chomp
+  `git reset HEAD \
+  && cd bundle/#{plugin} \
+  && git pull origin master \
+  && cd ../../ \
+  && git add bundle/#{plugin} \
+  && git commit -m 'Upgrade #{plugin} plugin.'`
+end
+
+
+desc "Upgrade all plugins to latest commit"
+task 'plugins:upgrade' do
+  plugins = Dir.new('bundle').entries.reject {|dir| dir.match(/^\.+$/)}
+  plugins.each do |plugin|
+    `git reset HEAD \
+    && cd bundle/#{plugin} \
+    && git pull origin master \
+    && cd ../../ \
+    && git add bundle/#{plugin} \
+    && git commit -m 'Upgrade #{plugin} plugin.'`
+  end
+end
+
+
+desc "Update plugins"
+task 'plugin:update' do
+  puts `git submodule init`
+  puts `git submodule update`
+end
+
+
 desc "Add new plugin"
 task 'plugin:add' do
   puts 'Paste HTTP URL of git repo:'
