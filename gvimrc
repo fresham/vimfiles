@@ -5,6 +5,7 @@ else
   set guifont=courier\ 14
 endif
 
+set hidden           " Use buffers as hidden
 set antialias        " Smooth fonts
 set encoding=utf-8   " Use UTF-8 everywhere
 set guioptions-=T    " Hide toolbar
