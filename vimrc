@@ -26,6 +26,8 @@ set incsearch               " Make search incremental
 " this is a bit buggy with GVim on Mint (maybe others as well, but at least this one),
 " so I've removed it explicitly.
 let g:proj_flags='imst'
+" Source a special bashrc for vim
+set shell=/bin/bash\ --rcfile\ ~/.vimbashrc
 
 " Set status line; I'm not completely sure how this works, I should figure this out
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
