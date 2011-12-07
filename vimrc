@@ -18,6 +18,8 @@ set expandtab               " Use spaces instead of tabs
 au FileType * setl fo-=cro  " Turn off auto-commenting
 let mapleader = "\\"        " Map leader to '\'
 set laststatus=2            " Show the status line all the time
+set hlsearch                " Highlight search results
+set incsearch               " Make search incremental
 
 " These are project plugin settings. Normally, these include the 'b' option,
 " which uses the file explorer of the OS to locate the project path. Unfortunately,
