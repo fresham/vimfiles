@@ -31,6 +31,3 @@
 [submodule "bundle/hexHighlight"]
 	path = bundle/hexHighlight
 	url = https://github.com/yurifury/hexHighlight.git
-[submodule "bundle/AutoTag"]
-	path = bundle/AutoTag
-	url = https://github.com/vim-scripts/AutoTag.git
