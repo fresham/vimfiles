@@ -1,6 +1,6 @@
 " Set font based on vim GUI
 if has("gui_macvim")
-  set guifont=courier\ new:h14
+  set guifont=DejaVu\ Sans\ Mono:h14
 else
   set guifont=courier\ 14
 endif
