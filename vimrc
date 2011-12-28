@@ -47,4 +47,8 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+nmap <Leader>h <Plug>HexHighlightToggle
+nmap <F5> :TlistToggle<CR>
+nmap <F6> <Plug>ToggleProject
+
 call pathogen#infect() " Run Pathogen to load the bundle
