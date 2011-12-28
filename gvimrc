@@ -21,6 +21,11 @@ au FocusLost * if !(bufname('%') == '') | :up | endif
 au TabLeave * if !(bufname('%') == '') | :up | endif
 au BufLeave * if !(bufname('%') == '') | :up | endif
 
+" Reload UltiSnips when losing focus
+au FocusLost * UltiSnipsReset
+au TabLeave * UltiSnipsReset
+au BufLeave * UltiSnipsReset
+
 " Save and load folds when entering and leaving a buffer
 au BufWinLeave * if !(bufname('%') == '') | mkview | endif
 au BufWinEnter * if !(bufname('%') == '') | silent loadview | endif
