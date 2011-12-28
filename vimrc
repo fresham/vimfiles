@@ -20,6 +20,7 @@ let mapleader = "\\"        " Map leader to '\'
 set laststatus=2            " Show the status line all the time
 set hlsearch                " Highlight search results
 set incsearch               " Make search incremental
+set foldmethod=manual
 
 " These are project plugin settings. Normally, these include the 'b' option,
 " which uses the file explorer of the OS to locate the project path. Unfortunately,
