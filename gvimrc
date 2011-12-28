@@ -14,7 +14,7 @@ set nowrap           " Don't wrap text
 set guioptions-=r    " Don't show right scrollbar
 set guioptions-=l    " Don't show left scrollbar?
 
-colorscheme mac_classic
+colorscheme cody
 
 " Save when losing focus
 au FocusLost * if !(bufname('%') == '') | :up | endif
