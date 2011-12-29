@@ -34,6 +34,7 @@ highlight Comment     guifg=#6DA9D9 guibg=#4D4D45 gui=italic
 highlight ColorColumn guifg=NONE    guibg=#4D4D45 gui=NONE
 highlight Directory   guifg=#6DA9D9 guibg=NONE    gui=NONE
 highlight ErrorMsg    guifg=#D9D9D9 guibg=#D96D6D gui=NONE
+highlight Constant    guifg=#D96D6D guibg=NONE gui=bold
 highlight link SpecialKey    NonText
 highlight link SignColumn    Folded
 highlight link FoldColumn    Folded
@@ -46,7 +47,6 @@ highlight rubyString           guifg=#72D96C guibg=NONE gui=NONE
 highlight rubyStringEscape     guifg=#1F801A guibg=NONE gui=bold
 highlight rubyInteger          guifg=#2187D9 guibg=NONE gui=NONE
 highlight rubyAccess           guifg=#996CD9 guibg=NONE gui=NONE
-highlight rubyConstant         guifg=#D96D6D guibg=NONE gui=bold
 highlight rubyControl          guifg=#6DA9D9 guibg=NONE gui=NONE
 highlight rubyInstanceVariable guifg=#66DFFF guibg=NONE gui=NONE
 highlight link rubyDefine          rubyControl
@@ -56,6 +56,7 @@ highlight link rubyPseudoVariable  rubyControl
 highlight link rubyFloat           rubyInteger
 highlight link rubyStringDelimiter rubyString
 highlight link rubyComment         Comment
+highlight link rubyConstant        Constant 
 
 " Project Plugin
 highlight projectDescription guifg=#6DA9D9 guibg=NONE gui=NONE
