@@ -15,6 +15,10 @@ endif
 
 let g:colors_name = "cody"
 
+" Clear default highlight groups
+highlight clear SpecialKey
+highlight clear SignColumn
+highlight clear FoldColumn
 
 " Generic
 highlight Normal guifg=#D9D9D9 guibg=#33332E gui=NONE
