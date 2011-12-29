@@ -4,6 +4,7 @@
 " Maintainer: Cody Frazer <frazercr@gmail.com>
 " License: public domain
 " Version: 0.2
+" Last Change: 12.29.2011
 
 " Boilerplate
 set background=dark
