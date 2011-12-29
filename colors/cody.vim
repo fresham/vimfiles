@@ -39,19 +39,22 @@ highlight link FoldColumn    Folded
 highlight link netrwClassify Directory
 
 " Ruby
-highlight rubySymbol guifg=#D96D6D guibg=NONE gui=NONE
-highlight rubyFunction guifg=#2187D9 guibg=NONE gui=bold,underline
-highlight rubyString guifg=#72D96C guibg=NONE gui=NONE
-highlight rubyStringEscape guifg=#1F801A guibg=NONE gui=bold
-highlight rubyInteger guifg=#2187D9 guibg=NONE gui=NONE
-highlight rubyControl guifg=#6DA9D9 guibg=NONE gui=NONE
-highlight rubyAccess guifg=#996CD9 guibg=NONE gui=NONE
-highlight link rubyFloat rubyInteger
-highlight link rubyDefine rubyControl
-highlight link rubyInclude rubyControl
-highlight link rubyKeyword rubyControl
+highlight rubySymbol           guifg=#D96D6D guibg=NONE gui=NONE
+highlight rubyFunction         guifg=#2187D9 guibg=NONE gui=bold,underline
+highlight rubyString           guifg=#72D96C guibg=NONE gui=NONE
+highlight rubyStringEscape     guifg=#1F801A guibg=NONE gui=bold
+highlight rubyInteger          guifg=#2187D9 guibg=NONE gui=NONE
+highlight rubyAccess           guifg=#996CD9 guibg=NONE gui=NONE
+highlight rubyConstant         guifg=#D96D6D guibg=NONE gui=bold
+highlight rubyControl          guifg=#6DA9D9 guibg=NONE gui=NONE
+highlight rubyInstanceVariable guifg=#66DFFF guibg=NONE gui=NONE
+highlight link rubyDefine          rubyControl
+highlight link rubyInclude         rubyControl
+highlight link rubyKeyword         rubyControl
+highlight link rubyPseudoVariable  rubyControl
+highlight link rubyFloat           rubyInteger
 highlight link rubyStringDelimiter rubyString
-highlight link rubyComment Comment
+highlight link rubyComment         Comment
 
 " Project
 highlight projectDescription guifg=#6DA9D9 guibg=NONE gui=NONE
