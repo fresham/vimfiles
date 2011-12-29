@@ -56,6 +56,6 @@ highlight link rubyFloat           rubyInteger
 highlight link rubyStringDelimiter rubyString
 highlight link rubyComment         Comment
 
-" Project
+" Project Plugin
 highlight projectDescription guifg=#6DA9D9 guibg=NONE gui=NONE
-highlight projectDirectory guifg=#D96D6D guibg=NONE gui=NONE
+highlight projectDirectory   guifg=#D96D6D guibg=NONE gui=NONE
