@@ -3,7 +3,7 @@
 " Name: cody.vim
 " Maintainer: Cody Frazer <frazercr@gmail.com>
 " License: public domain
-" Version: 0.1
+" Version: 0.2
 
 " Boilerplate
 set background=dark
