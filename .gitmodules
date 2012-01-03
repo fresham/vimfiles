@@ -34,3 +34,6 @@
 [submodule "bundle/tag_list.vim"]
 	path = bundle/tag_list.vim
 	url = https://github.com/jcf/tag_list.vim.git
+[submodule "bundle/vim-addon-background-cmd"]
+	path = bundle/vim-addon-background-cmd
+	url = https://github.com/MarcWeber/vim-addon-background-cmd.git
