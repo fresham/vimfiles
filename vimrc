@@ -15,7 +15,6 @@ set title                   " Change terminal title to current file
 set tabstop=2               " Global tab width.
 set shiftwidth=2            " And again, related.
 set expandtab               " Use spaces instead of tabs
-au FileType * setl fo-=cro  " Turn off auto-commenting
 let mapleader = "\\"        " Map leader to '\'
 set laststatus=2            " Show the status line all the time
 set hlsearch                " Highlight search results
@@ -27,7 +26,8 @@ set formatoptions-=c        " Don't auto-wrap comments based on textwidth
 set formatoptions-=r        " Don't auto-comment the next line when pressing <Enter> after a comment
 set formatoptions-=o        " Don't auto-comment the next line when pressing 'o' <after a comment
 set formatoptions+=M        " Don't insert spaces when joining lines
-set colorcolumn=+1          " Indicate the 80 characters column
+set colorcolumn=0           " Indicate the 80 characters column
+set noeb vb t_vb=           " Turn off visual and error bells
 
 " These are project plugin settings. Normally, these include the 'b' option,
 " which uses the file explorer of the OS to locate the project path. Unfortunately,
