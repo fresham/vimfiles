@@ -9,7 +9,6 @@ set hidden           " Use buffers as hidden
 set antialias        " Smooth fonts
 set encoding=utf-8   " Use UTF-8 everywhere
 set guioptions-=T    " Hide toolbar
-set background=light " Set light Background
 set nowrap           " Don't wrap text
 set guioptions-=r    " Don't show right scrollbar
 set guioptions-=l    " Don't show left scrollbar?
