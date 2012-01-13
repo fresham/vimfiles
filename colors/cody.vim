@@ -41,22 +41,36 @@ highlight link FoldColumn    Folded
 highlight link netrwClassify Directory
 
 " Ruby
-highlight rubySymbol           guifg=#D96D6D guibg=NONE gui=NONE
-highlight rubyFunction         guifg=#2187D9 guibg=NONE gui=bold,underline
-highlight rubyString           guifg=#72D96C guibg=NONE gui=NONE
-highlight rubyStringEscape     guifg=#1F801A guibg=NONE gui=bold
-highlight rubyInteger          guifg=#2187D9 guibg=NONE gui=NONE
-highlight rubyAccess           guifg=#996CD9 guibg=NONE gui=NONE
-highlight rubyControl          guifg=#6DA9D9 guibg=NONE gui=NONE
-highlight rubyInstanceVariable guifg=#66DFFF guibg=NONE gui=NONE
-highlight link rubyDefine          rubyControl
-highlight link rubyInclude         rubyControl
-highlight link rubyKeyword         rubyControl
-highlight link rubyPseudoVariable  rubyControl
-highlight link rubyFloat           rubyInteger
-highlight link rubyStringDelimiter rubyString
-highlight link rubyComment         Comment
-highlight link rubyConstant        Constant 
+highlight rubySymbol                 guifg=#D96D6D guibg=NONE gui=NONE
+highlight rubyFunction               guifg=#2187D9 guibg=NONE gui=bold,underline
+highlight rubyString                 guifg=#72D96C guibg=NONE gui=NONE
+highlight rubyStringEscape           guifg=#1F801A guibg=NONE gui=bold
+highlight rubyInteger                guifg=#2187D9 guibg=NONE gui=NONE
+highlight rubyAccess                 guifg=#996CD9 guibg=NONE gui=NONE
+highlight rubyControl                guifg=#6DA9D9 guibg=NONE gui=NONE
+highlight rubyInstanceVariable       guifg=#66DFFF guibg=NONE gui=NONE
+highlight rubyInterpolation          guifg=#FFB066 guibg=NONE gui=NONE
+highlight rubyInterpolationDelimiter guifg=#D97A21 guibg=NONE gui=NONE
+highlight link rubyDefine                   rubyControl
+highlight link rubyInclude                  rubyControl
+highlight link rubyKeyword                  rubyControl
+highlight link rubyPseudoVariable           rubyControl
+highlight link rubyConditional              rubyControl
+highlight link rubyConditionalModifier      rubyControl
+highlight link rubyRailsRenderMethod        rubyControl
+highlight link rubyRailsARMethod            rubyControl
+highlight link rubyRailsARAssociationMethod rubyControl
+highlight link rubyRailsARCallbackMethod    rubyControl
+highlight link rubyRailsARClassMethod       rubyControl
+highlight link rubyRailsARValidationMethod  rubyControl
+highlight link rubyFloat                    rubyInteger
+highlight link rubyStringDelimiter          rubyString
+highlight link rubyComment                  Comment
+highlight link rubyConstant                 Constant 
+highlight link rubyClassDeclaration         Constant
+highlight link rubyRailsUserClass           Constant
+highlight link rubyRailsClass               Constant
+highlight link rubyBlockParameter           rubyInstanceVariable
 
 " Project Plugin
 highlight projectDescription guifg=#6DA9D9 guibg=NONE gui=NONE
