@@ -35,6 +35,7 @@ highlight ColorColumn guifg=NONE    guibg=#4D4D45 gui=NONE
 highlight Directory   guifg=#6DA9D9 guibg=NONE    gui=NONE
 highlight ErrorMsg    guifg=#D9D9D9 guibg=#D96D6D gui=NONE
 highlight Constant    guifg=#D96D6D guibg=NONE gui=bold
+highlight Conceal     guifg=NONE guibg=NONE gui=NONE
 highlight link SpecialKey    NonText
 highlight link SignColumn    Folded
 highlight link FoldColumn    Folded
