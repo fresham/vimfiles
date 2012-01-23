@@ -51,12 +51,17 @@ highlight rubyControl                guifg=#6DA9D9 guibg=NONE gui=NONE
 highlight rubyInstanceVariable       guifg=#66DFFF guibg=NONE gui=NONE
 highlight rubyInterpolation          guifg=#FFB066 guibg=NONE gui=NONE
 highlight rubyInterpolationDelimiter guifg=#D97A21 guibg=NONE gui=NONE
+highlight link rubyBlockParameter           rubyInstanceVariable
+highlight link rubyPredefinedVariable       rubyInstanceVariable
+highlight link rubyPredefinedConstant       rubyInstanceVariable
+highlight link rubyAttribute                rubyControl
 highlight link rubyDefine                   rubyControl
 highlight link rubyInclude                  rubyControl
 highlight link rubyKeyword                  rubyControl
 highlight link rubyPseudoVariable           rubyControl
 highlight link rubyConditional              rubyControl
 highlight link rubyConditionalModifier      rubyControl
+highlight link rubySharpBang                rubyControl
 highlight link rubyRailsRenderMethod        rubyControl
 highlight link rubyRailsARMethod            rubyControl
 highlight link rubyRailsARAssociationMethod rubyControl
