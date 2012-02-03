@@ -21,11 +21,6 @@ set hlsearch                " Highlight search results
 set incsearch               " Make search incremental
 set foldmethod=manual       " Make the fold method manual
 set textwidth=80            " Set width of text to 80 chars for wrapping and such
-set formatoptions-=t        " Don't auto-wrap text based on textwidth
-set formatoptions-=c        " Don't auto-wrap comments based on textwidth
-set formatoptions-=r        " Don't auto-comment the next line when pressing <Enter> after a comment
-set formatoptions-=o        " Don't auto-comment the next line when pressing 'o' <after a comment
-set formatoptions+=M        " Don't insert spaces when joining lines
 set colorcolumn=0           " Indicate the 80 characters column
 set noeb vb t_vb=           " Turn off visual and error bells
 
@@ -57,5 +52,11 @@ endfunc
 nmap <Leader>h <Plug>HexHighlightToggle
 nmap <F5> :TlistToggle<CR>
 nmap <F6> <Plug>ToggleProject
+
+au filetype * set fo-=t " don't auto-wrap text based on textwidth
+au filetype * set fo-=c " don't auto-wrap comments based on textwidth
+au filetype * set fo-=r " don't auto-comment the next line when pressing <enter> after a comment
+au filetype * set fo-=o " don't auto-comment the next line when pressing 'o' <after a comment
+au filetype * set fo+=m " don't insert spaces when joining lines
 
 call pathogen#infect() " Run Pathogen to load the bundle
