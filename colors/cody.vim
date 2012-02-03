@@ -35,7 +35,8 @@ highlight ColorColumn guifg=NONE    guibg=#4D4D45 gui=NONE
 highlight Directory   guifg=#6DA9D9 guibg=NONE    gui=NONE
 highlight ErrorMsg    guifg=#D9D9D9 guibg=#D96D6D gui=NONE
 highlight Constant    guifg=#D96D6D guibg=NONE gui=bold
-highlight Conceal     guifg=NONE guibg=NONE gui=NONE
+highlight Conceal     guifg=#996CD9 guibg=NONE gui=NONE
+highlight link Todo          IncSearch
 highlight link SpecialKey    NonText
 highlight link SignColumn    Folded
 highlight link FoldColumn    Folded
@@ -69,6 +70,14 @@ highlight link rubyRailsARAssociationMethod rubyControl
 highlight link rubyRailsARCallbackMethod    rubyControl
 highlight link rubyRailsARClassMethod       rubyControl
 highlight link rubyRailsARValidationMethod  rubyControl
+highlight link rubyRailsMigrationMethod     rubyControl
+highlight link rubyRailsMethod              rubyControl
+highlight link rubyRailsRakeMethod          rubyControl
+highlight link rubyRailsFilterMethod        rubyControl
+highlight link erubyDelimiter               rubyControl
+highlight link erubyRailsRenderMethod       rubyControl
+highlight link erubyRailsHelperMethod       rubyControl
+highlight link erubyRailsUserClass          Constant
 highlight link rubyFloat                    rubyInteger
 highlight link rubyStringDelimiter          rubyString
 highlight link rubyComment                  Comment
@@ -77,6 +86,7 @@ highlight link rubyClassDeclaration         Constant
 highlight link rubyRailsUserClass           Constant
 highlight link rubyRailsClass               Constant
 highlight link rubyBlockParameter           rubyInstanceVariable
+highlight link rubyTodo                     IncSearch
 
 " Project Plugin
 highlight projectDescription guifg=#6DA9D9 guibg=NONE gui=NONE
