@@ -42,6 +42,21 @@ highlight link SignColumn    Folded
 highlight link FoldColumn    Folded
 highlight link netrwClassify Directory
 
+" PHP
+highlight phpIdentifier   guifg=#66DFFF guibg=NONE gui=NONE
+highlight phpStorageClass guifg=#996CD9 guibg=NONE gui=NONE
+highlight phpStringSingle guifg=#72D96C guibg=NONE gui=NONE
+highlight phpStructure    guifg=#6DA9D9 guibg=NONE gui=NONE
+highlight phpNumber       guifg=#2187D9 guibg=NONE gui=NONE
+highlight link Delimiter       phpStructure
+highlight link None            phpStringSingle
+highlight link phpKeyword      phpStructure
+highlight link phpOperator     phpStructure
+highlight link phpRelation     phpStructure
+highlight link phpStringDouble phpStringSingle
+highlight link phpType         phpStructure
+highlight link phpVarSelector  phpIdentifier 
+
 " Ruby
 highlight rubySymbol                 guifg=#D96D6D guibg=NONE gui=NONE
 highlight rubyFunction               guifg=#2187D9 guibg=NONE gui=bold,underline
@@ -74,7 +89,7 @@ highlight link rubyRailsMigrationMethod     rubyControl
 highlight link rubyRailsMethod              rubyControl
 highlight link rubyRailsRakeMethod          rubyControl
 highlight link rubyRailsFilterMethod        rubyControl
-highlight link erubyDelimiter               rubyControl
+highlight link erubyDelimiter               Delimiter
 highlight link erubyRailsRenderMethod       rubyControl
 highlight link erubyRailsHelperMethod       rubyControl
 highlight link erubyRailsUserClass          Constant
