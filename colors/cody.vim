@@ -48,14 +48,21 @@ highlight phpStorageClass guifg=#996CD9 guibg=NONE gui=NONE
 highlight phpStringSingle guifg=#72D96C guibg=NONE gui=NONE
 highlight phpStructure    guifg=#6DA9D9 guibg=NONE gui=NONE
 highlight phpNumber       guifg=#2187D9 guibg=NONE gui=NONE
-highlight link Delimiter       phpStructure
-highlight link None            phpStringSingle
-highlight link phpKeyword      phpStructure
-highlight link phpOperator     phpStructure
-highlight link phpRelation     phpStructure
-highlight link phpStringDouble phpStringSingle
-highlight link phpType         phpStructure
-highlight link phpVarSelector  phpIdentifier 
+highlight link Delimiter         phpStructure
+highlight link None              phpStringSingle
+highlight link phpAssignByRef    phpStructure
+highlight link phpDefine         phpStructure
+highlight link phpFunctions      phpStructure
+highlight link phpInclude        phpStructure
+highlight link phpKeyword        phpStructure
+highlight link phpMemberSelector phpStructure
+highlight link phpOperator       phpStructure
+highlight link phpRelation       phpStructure
+highlight link phpRepeat         phpStructure
+highlight link phpStatement      phpStructure
+highlight link phpStringDouble   phpStringSingle
+highlight link phpType           phpStructure
+highlight link phpVarSelector    phpIdentifier 
 
 " Ruby
 highlight rubySymbol                 guifg=#D96D6D guibg=NONE gui=NONE

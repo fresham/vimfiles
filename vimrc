@@ -40,6 +40,8 @@ nmap <silent> <Left> :bp<Cr>
 nmap <silent> <Right> :bn<Cr>
 nmap <silent> <Up> :bd<Cr>
 
+nmap <silent> <Leader>l :set list!<Cr>
+
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
