@@ -2,13 +2,14 @@
 if has("gui_macvim")
   set guifont=DejaVu\ Sans\ Mono:h14
 else
-  set guifont=courier\ 14
+  set guifont=Droid\ Sans\ Mono\ 12
 endif
 
 set hidden           " Use buffers as hidden
 set antialias        " Smooth fonts
 set encoding=utf-8   " Use UTF-8 everywhere
 set guioptions-=T    " Hide toolbar
+set guioptions-=m    " Hide menu
 set nowrap           " Don't wrap text
 set guioptions-=r    " Don't show right scrollbar
 set guioptions-=l    " Don't show left scrollbar?
