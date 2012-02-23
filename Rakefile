@@ -1,9 +1,11 @@
-def link(old, new)
-  old = File.expand_path(old)
-  File.delete(old) if File.exists?(old)
-  File.symlink(new, old)
+def link_file(target, name)
+  target = File.expand_path(target)
+  name = File.expand_path(name)
   
-  puts "Linked #{old} to #{new}"
+  File.delete(name) if File.exists?(name)
+  File.symlink(target, name)
+  
+  puts "Linked #{name} to #{target}"
 end
 
 
@@ -37,28 +39,28 @@ end
 
 desc "Link .vimrc file"
 task 'link:vimrc' do
-  old = File.join('~', '.vimrc')
-  new = File.join(Dir.getwd, 'vimrc')
+  target = File.join(Dir.getwd, 'vimrc')
+  name = File.join('~', '.vimrc')
   
-  link(old, new)
+  link_file(target, name)
 end
 
 
 desc "Link .gvimrc file"
 task 'link:gvimrc' do
-  old = File.join('~', '.gvimrc')
-  new = File.join(Dir.getwd, 'gvimrc')
+  target = File.join(Dir.getwd, 'gvimrc')
+  name = File.join('~', '.gvimrc')
   
-  link(old, new)
+  link_file(target, name)
 end
 
 
 desc "Link .vim directory"
 task 'link:vim' do
-  old = File.join('~', '.vim')
-  new = Dir.getwd
+  target = Dir.getwd
+  name = File.join('~', '.vim')
   
-  link(old, new)
+  link_file(target, name)
 end
 
 
