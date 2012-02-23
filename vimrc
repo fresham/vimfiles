@@ -52,8 +52,8 @@ function! <SID>SynStack()
 endfunc
 
 nmap <Leader>h <Plug>HexHighlightToggle
-nmap <F5> :TlistToggle<CR>
-nmap <F6> <Plug>ToggleProject
+nmap <silent> <F5> :TlistToggle<CR>
+nmap <silent> <F6> <Plug>ToggleProject
 
 au filetype * set fo-=t " don't auto-wrap text based on textwidth
 au filetype * set fo-=c " don't auto-wrap comments based on textwidth
