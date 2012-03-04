@@ -64,6 +64,17 @@ highlight link phpStringDouble   phpStringSingle
 highlight link phpType           phpStructure
 highlight link phpVarSelector    phpIdentifier 
 
+" JavaScript
+hi javaScriptOperator         guifg=#6DA9D9 guibg=NONE gui=NONE
+hi javaScriptNumber           guifg=#2187D9 guibg=NONE gui=NONE
+hi javaScriptStringD          guifg=#72D96C guibg=NONE gui=NONE
+hi link javaScriptStringS     javaScriptStringD
+hi link javaScriptIdentifier  javaScriptOperator
+hi link javaScriptFunction    javaScriptOperator
+hi link javaScriptConditional javaScriptOperator
+hi link javaScriptBraces      Normal
+
+
 " Ruby
 highlight rubySymbol                 guifg=#D96D6D guibg=NONE gui=NONE
 highlight rubyFunction               guifg=#2187D9 guibg=NONE gui=bold,underline
