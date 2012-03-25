@@ -160,7 +160,7 @@ end
 desc "Do pre-init checks"
 task 'check' do
   ctags_path = `which ctags`
-  ctags_path ? "ctags found at #{ctags_path}" : "ctags not found! Install exuberant-ctags before intializing bundle."
+  puts ctags_path ? "ctags found at #{ctags_path}" : "ctags not found! Install exuberant-ctags before intializing bundle."
 end
 
 
