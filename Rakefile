@@ -157,8 +157,16 @@ task 'doc:update' do
 end
 
 
+desc "Do pre-init checks"
+task 'check' do
+  ctags_path = `which ctags`
+  ctags_path ? "ctags found at #{ctags_path}" : "ctags not found! Install exuberant-ctags before intializing bundle."
+end
+
+
 desc "Initialize submodules and link up files"
 task 'init' do
+  Rake::Task['check'].invoke
   Rake::Task['plugin:update'].invoke
   Rake::Task['link:all'].invoke
   Rake::Task['doc:update'].invoke
