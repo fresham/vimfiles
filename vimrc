@@ -21,7 +21,6 @@ set hlsearch                " Highlight search results
 set incsearch               " Make search incremental
 set foldmethod=manual       " Make the fold method manual
 set textwidth=80            " Set width of text to 80 chars for wrapping and such
-set colorcolumn=0           " Indicate the 80 characters column
 set noeb vb t_vb=           " Turn off visual and error bells
 
 " These are project plugin settings. Normally, these include the 'b' option,
