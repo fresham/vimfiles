@@ -33,7 +33,7 @@
 	url = https://github.com/MarcWeber/vim-addon-background-cmd.git
 [submodule "bundle/UltiSnips"]
 	path = bundle/UltiSnips
-	url = git://github.com:fresham/UltiSnips.git
+	url = git@github.com:fresham/UltiSnips.git
 [submodule "bundle/vim-project"]
 	path = bundle/vim-project
 	url = https://github.com/shemerey/vim-project.git
