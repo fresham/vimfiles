@@ -25,9 +25,6 @@
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
-[submodule "bundle/UltiSnips"]
-	path = bundle/UltiSnips
-	url = https://github.com/fresham/UltiSnips.git
 [submodule "bundle/hexHighlight"]
 	path = bundle/hexHighlight
 	url = https://github.com/yurifury/hexHighlight.git

@@ -15,7 +15,7 @@ set guioptions-=r    " Don't show right scrollbar
 set guioptions-=l    " Don't show left scrollbar?
 set vb t_vb=         " Turn off error and visual bells
 
-colorscheme cody
+colorscheme default
 
 " Save when losing focus
 au FocusLost * if !(bufname('%') == '') | :up | endif
