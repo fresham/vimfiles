@@ -22,6 +22,7 @@ set incsearch               " Make search incremental
 set foldmethod=manual       " Make the fold method manual
 set textwidth=80            " Set width of text to 80 chars for wrapping and such
 set noeb vb t_vb=           " Turn off visual and error bells
+set background=dark
 
 " These are project plugin settings. Normally, these include the 'b' option,
 " which uses the file explorer of the OS to locate the project path. Unfortunately,
@@ -53,6 +54,8 @@ endfunc
 nmap <Leader>h <Plug>HexHighlightToggle
 nmap <silent> <F5> :TlistToggle<CR>
 nmap <silent> <F6> <Plug>ToggleProject
+
+au filetype *.js set noexpandtab
 
 au filetype * set fo-=t " don't auto-wrap text based on textwidth
 au filetype * set fo-=c " don't auto-wrap comments based on textwidth
