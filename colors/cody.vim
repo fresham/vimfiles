@@ -42,6 +42,25 @@ highlight link SignColumn    Folded
 highlight link FoldColumn    Folded
 highlight link netrwClassify Directory
 
+" Python
+" highlight rubySymbol                 guifg=#D96D6D guibg=NONE gui=NONE
+" highlight rubyFunction               guifg=#2187D9 guibg=NONE gui=bold,underline
+" highlight rubyString                 guifg=#72D96C guibg=NONE gui=NONE
+" highlight rubyStringEscape           guifg=#1F801A guibg=NONE gui=bold
+" highlight rubyInteger                guifg=#2187D9 guibg=NONE gui=NONE
+" highlight rubyAccess                 guifg=#996CD9 guibg=NONE gui=NONE
+" highlight rubyControl                guifg=#6DA9D9 guibg=NONE gui=NONE
+" highlight rubyInstanceVariable       guifg=#66DFFF guibg=NONE gui=NONE
+" highlight rubyInterpolation          guifg=#FFB066 guibg=NONE gui=NONE
+" highlight rubyInterpolationDelimiter guifg=#D97A21 guibg=NONE gui=NONE
+hi pythonStatement guifg=#6DA9D9 guibg=NONE gui=NONE
+hi pythonFunction  guifg=#2187D9 guibg=NONE gui=bold,underline
+hi pythonString    guifg=#72D96C guibg=NONE gui=NONE
+hi pythonNumber    guifg=#2187D9 guibg=NONE gui=NONE
+hi link pythonBuiltin     pythonStatement
+hi link pythonInclude     pythonStatement
+hi link pythonConditional pythonStatement
+
 " PHP
 highlight phpIdentifier   guifg=#66DFFF guibg=NONE gui=NONE
 highlight phpStorageClass guifg=#996CD9 guibg=NONE gui=NONE
