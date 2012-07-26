@@ -2,6 +2,7 @@ set nocompatible " Set Vim to run in the full-featured mod
 
 syntax enable
 filetype plugin indent on
+filetype plugin on
 set autoindent              " Automatically indent on new lines
 set smartindent             " Change indentation to match a local context
 set ignorecase              " Case-insensitive searching.
@@ -54,8 +55,7 @@ endfunc
 nmap <Leader>h <Plug>HexHighlightToggle
 nmap <silent> <F5> :TlistToggle<CR>
 nmap <silent> <F6> <Plug>ToggleProject
-
-au filetype *.js set noexpandtab
+nmap <silent> <F7> :w<CR>:make<CR>:cw<CR>
 
 au filetype * set fo-=t " don't auto-wrap text based on textwidth
 au filetype * set fo-=c " don't auto-wrap comments based on textwidth

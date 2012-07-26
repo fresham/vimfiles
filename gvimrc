@@ -5,6 +5,7 @@ else
   set guifont=Droid\ Sans\ Mono\ 12
 endif
 
+filetype plugin on
 set hidden           " Use buffers as hidden
 set antialias        " Smooth fonts
 set encoding=utf-8   " Use UTF-8 everywhere
