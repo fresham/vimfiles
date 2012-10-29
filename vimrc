@@ -24,7 +24,6 @@ set foldmethod=manual       " Make the fold method manual
 set textwidth=80            " Set width of text to 80 chars for wrapping and such
 set noeb vb t_vb=           " Turn off visual and error bells
 set background=dark
-let $PATH = $PATH . ':/home/cody/Code/node_modules/.bin:/opt/bin'
 
 " These are project plugin settings. Normally, these include the 'b' option,
 " which uses the file explorer of the OS to locate the project path. Unfortunately,
@@ -32,7 +31,7 @@ let $PATH = $PATH . ':/home/cody/Code/node_modules/.bin:/opt/bin'
 " so I've removed it explicitly.
 let g:proj_flags='imst'
 " Source a special bashrc for vim
-"set shell=/bin/bash\ --rcfile\ ~/.vimbashrc
+set shell=/bin/bash\ --rcfile\ ~/.vimbashrc
 
 " Set status line; I'm not completely sure how this works, I should figure this out
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
@@ -63,7 +62,5 @@ au filetype * set fo-=c " don't auto-wrap comments based on textwidth
 au filetype * set fo-=r " don't auto-comment the next line when pressing <enter> after a comment
 au filetype * set fo-=o " don't auto-comment the next line when pressing 'o' <after a comment
 au filetype * set fo+=m " don't insert spaces when joining lines
-
-au FileType javascript call JavaScriptFold() " Enable JavaScript syntax folding
 
 call pathogen#infect() " Run Pathogen to load the bundle
